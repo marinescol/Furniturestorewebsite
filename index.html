@@ -6,9 +6,18 @@
     <title>LuxMuebles - Muebles de Diseño</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
+       <style>
+    html {
+        scroll-behavior: smooth;
+    }
+    .back-to-top {
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .back-to-top.visible {
+        opacity: 1;
+    }
+</style>
     </style>
 </head>
 <body class="bg-gray-50">
@@ -133,5 +142,20 @@
             </div>
         </div>
     </footer>
+    <button onclick="window.scrollTo({top: 0})" id="backToTop" 
+        class="back-to-top fixed bottom-4 right-4 bg-gray-900 text-white p-4 rounded-full shadow-lg hover:bg-gray-800 z-50">
+    ↑
+</button>
+
+<script>
+    const button = document.getElementById('backToTop');
+    window.onscroll = () => {
+        if (window.scrollY > window.innerHeight) {
+            button.classList.add('visible');
+        } else {
+            button.classList.remove('visible');
+        }
+    };
+</script>
 </body>
 </html>
