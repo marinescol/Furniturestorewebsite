@@ -12,7 +12,8 @@
     </style>
 </head>
 <body class="bg-gray-50">
-    <nav class="bg-white shadow-lg">
+    <!-- Navegación permanece igual -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <h1 class="text-2xl font-bold text-gray-800">LuxMuebles</h1>
@@ -26,9 +27,10 @@
         </div>
     </nav>
 
-    <header class="relative">
+    <!-- Header con imagen de sala moderna -->
+    <header class="relative pt-16">
         <div class="bg-gray-900 h-96 flex items-center">
-            <img src="/api/placeholder/1200/500" alt="Sala moderna" class="absolute w-full h-full object-cover opacity-50">
+            <img src="/api/placeholder/1200/500" alt="Interior moderno con sofá gris y mesa de madera" class="absolute w-full h-full object-cover opacity-50">
             <div class="relative max-w-6xl mx-auto px-4 text-white">
                 <h2 class="text-4xl font-bold mb-4">Diseño y Confort para tu Hogar</h2>
                 <p class="text-xl mb-8">Muebles contemporáneos que transforman espacios</p>
@@ -38,7 +40,8 @@
     </header>
 
     <main class="max-w-6xl mx-auto px-4 py-12">
-        <section id="nosotros" class="mb-16">
+        <!-- Sección Nosotros con imagen de showroom -->
+        <section id="nosotros" class="mb-16 pt-16">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
                     <h3 class="text-2xl font-bold mb-4">Nuestra Historia</h3>
@@ -56,44 +59,52 @@
                     </div>
                 </div>
                 <div class="relative h-96">
-                    <img src="/api/placeholder/600/400" alt="Nuestro taller" class="absolute w-full h-full object-cover rounded-lg shadow-lg">
+                    <img src="/api/placeholder/600/400" alt="Nuestro showroom moderno" class="absolute w-full h-full object-cover rounded-lg shadow-lg">
                 </div>
             </div>
         </section>
 
-        <section id="catalogo">
+        <!-- Catálogo con imágenes de productos -->
+        <section id="catalogo" class="pt-16">
             <h3 class="text-2xl font-bold mb-8">Nuestros Productos Destacados</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="/api/placeholder/400/300" alt="Sofá moderno" class="w-full h-48 object-cover">
+                <!-- Producto 1: Sofá -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="/api/placeholder/400/300" alt="Sofá moderno gris con cojines decorativos" class="w-full h-64 object-cover">
                     <div class="p-4">
                         <h4 class="font-bold mb-2">Sofá Moderno Milano</h4>
-                        <p class="text-gray-600 mb-4">Diseño ergonómico con tapizado premium</p>
+                        <p class="text-gray-600 mb-4">Diseño ergonómico con tapizado premium en lino gris</p>
                         <p class="text-xl font-bold text-gray-900">$899.99</p>
+                        <button class="mt-4 w-full bg-gray-900 text-white py-2 rounded hover:bg-gray-800">Ver Detalles</button>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="/api/placeholder/400/300" alt="Mesa de comedor" class="w-full h-48 object-cover">
+                <!-- Producto 2: Mesa -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="/api/placeholder/400/300" alt="Mesa de comedor de madera natural" class="w-full h-64 object-cover">
                     <div class="p-4">
                         <h4 class="font-bold mb-2">Mesa Nordic</h4>
-                        <p class="text-gray-600 mb-4">Madera maciza con acabado natural</p>
+                        <p class="text-gray-600 mb-4">Madera de roble maciza con acabado natural mate</p>
                         <p class="text-xl font-bold text-gray-900">$649.99</p>
+                        <button class="mt-4 w-full bg-gray-900 text-white py-2 rounded hover:bg-gray-800">Ver Detalles</button>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="/api/placeholder/400/300" alt="Silla ejecutiva" class="w-full h-48 object-cover">
+                <!-- Producto 3: Sillón -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="/api/placeholder/400/300" alt="Sillón ejecutivo ergonómico negro" class="w-full h-64 object-cover">
                     <div class="p-4">
                         <h4 class="font-bold mb-2">Sillón Ejecutivo Ergo</h4>
-                        <p class="text-gray-600 mb-4">Máximo confort para tu espacio de trabajo</p>
+                        <p class="text-gray-600 mb-4">Diseño ergonómico con soporte lumbar ajustable</p>
                         <p class="text-xl font-bold text-gray-900">$299.99</p>
+                        <button class="mt-4 w-full bg-gray-900 text-white py-2 rounded hover:bg-gray-800">Ver Detalles</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contacto" class="mt-16">
+        <!-- Sección de contacto permanece igual -->
+        <section id="contacto" class="mt-16 pt-16">
             <div class="bg-white rounded-lg shadow-md p-8">
                 <h3 class="text-2xl font-bold mb-6">Contáctanos</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
