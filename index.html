@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxMuebles - Muebles de Diseño</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <h1 class="text-2xl font-bold text-gray-800">LuxMuebles</h1>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Inicio</a>
+                    <a href="#catalogo" class="text-gray-600 hover:text-gray-900">Catálogo</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-gray-900">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative">
+        <div class="bg-gray-900 h-96 flex items-center">
+            <img src="/api/placeholder/1200/500" alt="Sala moderna" class="absolute w-full h-full object-cover opacity-50">
+            <div class="relative max-w-6xl mx-auto px-4 text-white">
+                <h2 class="text-4xl font-bold mb-4">Diseño y Confort para tu Hogar</h2>
+                <p class="text-xl mb-8">Muebles contemporáneos que transforman espacios</p>
+                <a href="#catalogo" class="bg-white text-gray-900 px-6 py-3 rounded-lg hover:bg-gray-100">Ver Catálogo</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <section id="catalogo">
+            <h3 class="text-2xl font-bold mb-8">Nuestros Productos Destacados</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Sofá moderno" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold mb-2">Sofá Moderno Milano</h4>
+                        <p class="text-gray-600 mb-4">Diseño ergonómico con tapizado premium</p>
+                        <p class="text-xl font-bold text-gray-900">$899.99</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Mesa de comedor" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold mb-2">Mesa Nordic</h4>
+                        <p class="text-gray-600 mb-4">Madera maciza con acabado natural</p>
+                        <p class="text-xl font-bold text-gray-900">$649.99</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="/api/placeholder/400/300" alt="Silla ejecutiva" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold mb-2">Sillón Ejecutivo Ergo</h4>
+                        <p class="text-gray-600 mb-4">Máximo confort para tu espacio de trabajo</p>
+                        <p class="text-xl font-bold text-gray-900">$299.99</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="mt-16">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h3 class="text-2xl font-bold mb-6">Contáctanos</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-bold mb-4">Información de Contacto</h4>
+                        <p class="mb-2">📍 Av. Principal 123, Ciudad</p>
+                        <p class="mb-2">📱 +1 234 567 890</p>
+                        <p class="mb-2">✉️ info@luxmuebles.com</p>
+                        <p class="mb-2">🕒 Lun - Sáb: 9:00 - 18:00</p>
+                    </div>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Nombre" class="w-full p-2 border rounded">
+                        <input type="email" placeholder="Email" class="w-full p-2 border rounded">
+                        <textarea placeholder="Mensaje" class="w-full p-2 border rounded h-32"></textarea>
+                        <button class="bg-gray-900 text-white px-6 py-2 rounded hover:bg-gray-800">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white mt-16">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="text-center">
+                <p>© 2024 LuxMuebles. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
